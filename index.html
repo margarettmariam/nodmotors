@@ -15,6 +15,7 @@
 
 </head>
 <body>
+<div class="overlay"></div>
     <header>
         <div class="navigation">
         <a href="index.html" class="logo">
@@ -23,10 +24,10 @@
         <nav>
             <ul class="main-menu">
                 <li><a href="#">Cars</a></li>
-                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
                 <li><a href="#">Contact</a></li>
                 <li>
-                    <a href="#" class="book-btn">Book</a>
+                    <a href="javascript:;" class="book-btn">Book</a>
                 </li>
             </ul>
         </nav>
@@ -217,7 +218,29 @@
         </ul>
     </footer>
     <script src="styles/assets/custom.js"></script>
- </body>
+<div class="modal">
+    <div class="booking-form">
+        <h1>Booking Form</h1>
+        <p>Includes Michelin Pilot Sport 4S tires, larger, more powerful brakes and lowered</p>
+        <form class="inputs">
+            <input type="text" placeholder="Name">
+            <input type="number" placeholder="Phone">
+            <input type="email" placeholder="Email">
+            <textarea>Message</textarea>
+            <input  class="button" type="submit" value="Send" >
+        </form>
+        <div class="success-booking-wrapper">
+        <div class="success-booking">
+                <span>&#10004;</span>
+            <p class="greeting">Thank you!
+                Your message has been
+                sent successfully.</p>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+
 
 
 

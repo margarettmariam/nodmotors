@@ -163,7 +163,7 @@
     }
 
     .left-selector select{
-        width: 50%;
+        width: 58%;
     }
 
     .cars-description{
@@ -177,13 +177,36 @@
         flex-direction: column;
     }
 
+    .terms-conditions{
+        padding-top:0;
+        max-width: 80%;
+    }
+    .terms-conditions h1{
+        text-align: left;
+        font-size: 30px;
+    }
+    .terms-conditions p{
+        font-size: 14px;
+    }
+    .booking-form p{
+        font-size: 14px;
+    }
+    .modal-open .modal{
+        top:70px;
+    }
 
-
+     footer{
+         flex-direction: column-reverse;
+         align-items: center;
+     }
+    .footer-logo {
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
 }
 
 @media (min-width: 641px) and (max-width: 768px){
-
-
 
     .main-container{
         padding-left: 10px;
