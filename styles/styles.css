@@ -13,6 +13,51 @@ header{
     height: 768px;
     position:relative;
 }
+.navbar-toggler{
+    width: 25px;
+    height: 25px;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    padding:7px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #6ab04c, #badc58);;
+}
+.navbar-toggler span,
+.navbar-toggler span::after,
+.navbar-toggler span::before{
+    width: 1.3em;
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.navbar-toggler span::after,
+.navbar-toggler span::before{
+    content: "";
+}
+
+.navbar-toggler span::after{
+    top: 4px;
+}
+
+.navbar-toggler span::before{
+    bottom: 7px;
+}
+.navbar-toggler.expanded span{
+    height: 0;
+}
+.navbar-toggler.expanded span::before{
+    transform: rotate(-45deg) translate(-3px, 3px);
+}
+.navbar-toggler.expanded span::after{
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+
 .logo{
     display: inline-flex;
     align-items: center;
@@ -69,16 +114,18 @@ header{
 }
 
 .dot-1{
-    left:245px;
-    top:290px;
+    left: 28%;
+    top: 59%;
 }
-.dot-2{
-    left:482px;
-    top:174px;
+
+.dot-2 {
+    left: 50%;
+    top: 33%;
 }
-.dot-3{
-    left:682px;
-    top:204px;
+
+.dot-3 {
+    left: 80%;
+    top: 40%;
 }
 .dot .layer{
     border-radius: 100%;
@@ -127,10 +174,8 @@ header{
     position: absolute;
     top:94px;
     display:block;
-    width: 1192px;
-    height: 302px;
     z-index: 0;
-    font-size: 250px;
+    font-size: 21vw;
     color: #FFF;
     text-shadow: 0 3px 6px
     rgba(24, 24, 24, 0.06);
@@ -228,7 +273,7 @@ li{
 .avail-cars-subtitle{
     font-size: 10px;
     color: #95a5a6;
-
+    margin-top: 0;
 }
 
 
@@ -236,6 +281,7 @@ li{
     display: flex;
     justify-content: space-between;
     padding: 27px 0;
+    font-family: pantonmtav3-bold;
 
 }
 
@@ -245,7 +291,6 @@ li{
     display: inline-flex;
     width: 50%;
     justify-content: space-between;
-
 }
 
 .filter li{
@@ -299,7 +344,8 @@ li{
     width:100%;
     display: block;
     text-align: right;
-    padding-right: 116px;
+    position: relative;
+    right:22%;
 
 }
 .cars-description span{
@@ -313,12 +359,13 @@ li{
 
 .content-img{
     object-fit: cover;
-    size: relative;
+
 }
 
 .product-name{
     font-size: 20px;
     padding-top: 10px;
+    margin-bottom: 0;
 }
 .colors{
     display: flex;
@@ -371,6 +418,7 @@ li{
 .prod-description li{
     padding: 10px;
     padding-left: 0;
+    padding-top: 0;
 }
 
 footer {
@@ -388,11 +436,13 @@ footer {
 }
 .info{
     display: flex;
+    padding: 0;
 }
 
 .info li{
     padding-left:20px;
 }
+
 
 
 
