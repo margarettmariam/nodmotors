@@ -585,7 +585,8 @@ body.modal-open{
     display:none;
 }
 
-.booking-form textarea{
+.booking-form textarea,
+.contact-info textarea{
     width: 216px;
     height: 60px;
     border:1px transparent solid;
@@ -597,7 +598,8 @@ body.modal-open{
     padding-left:10px;
 
 }
-.booking-form input{
+.booking-form input,
+.contact-info input{
     padding-left: 10px;
     font-size: 10px;
     color: #b4c4c5;
@@ -609,7 +611,8 @@ body.modal-open{
     background-color: #e8f0f3;
 }
 
-.booking-form .button {
+.booking-form .button ,
+.contact-info .button {
     color:#ffffff;
     font-size: 10px;
     width: 228px;
@@ -766,4 +769,91 @@ body.modal-open{
 
 .available-3-cars{
     margin-top: 100px;
+}
+
+.contact-page header{
+    background-color: white;
+    height: auto;
+}
+
+.contact-info{
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 10px;
+    max-width: 256px;
+    height: 586px;
+    background-color: #e8f0f3;
+    display: inline-block;
+}
+
+.map{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.informative-box{
+    border-radius: 10px;
+    width:380px;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(24, 24, 24, 0.06);
+    padding: 30px;
+    padding-left: 72px;
+    position: relative;
+    z-index:3;
+}
+.informative-box ul{
+    padding: 0;
+    margin: 0;
+}
+.informative-box ul li{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+.informative-box ul li:last-child{
+    padding-bottom: 0;
+}
+
+.informative-box ul li p{
+    margin: 0;
+}
+
+main{
+    max-width: 1084px;
+    margin:0 auto;
+    display: flex;
+    position: relative;
+}
+
+main section:nth-child(odd){
+    padding-right: 10px;
+}
+
+main section:nth-child(even){
+    padding-left: 10px;
+}
+
+.contact-info .contact-inputs input,
+.contact-info .contact-inputs textarea{
+    background-color: #ffffff;
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 50vw;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }

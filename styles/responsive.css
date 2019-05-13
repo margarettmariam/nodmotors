@@ -1,5 +1,9 @@
 @media (max-width: 640px){
 
+    main{
+        flex-wrap: wrap;
+    }
+
     .banner-img{
         width:100%;
         height: auto;
