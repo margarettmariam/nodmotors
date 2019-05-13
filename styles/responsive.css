@@ -204,6 +204,19 @@
         text-align: center;
         padding-top: 10px;
     }
+
+    .col-1-2, .col-1-3, .col-2-3 { width: 100%; }
+    .col {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .col img {
+        max-width: 100%;
+    }
+    .images-in-row{
+        text-align: center;
+    }
 }
 
 @media (min-width: 641px) and (max-width: 768px){
@@ -237,6 +250,15 @@
         margin-bottom: 30px;
     }
 
+    .col-1-2, .col-1-3, .col-2-3 { width: 100%; }
+    .col {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .images-in-row{
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 1024px){
@@ -251,5 +273,15 @@
     .main-menu{
         margin: 0;
         padding: 0;
+    }
+
+    .col img {
+        max-width: 100%;
+    }
+    .available-3-cars .avail-cars-title,
+    .available-3-cars .avail-cars-subtitle{
+        max-width: 100%;
+        text-align: center;
+        width:100%;
     }
 }
